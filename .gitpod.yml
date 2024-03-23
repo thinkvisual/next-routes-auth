@@ -1,0 +1,17 @@
+
+image: gitpod/workspace-bun
+
+tasks:
+  - name: Terminal 1
+    init: |
+      # Install Bun
+      curl -fsSL https://bun.sh/install | bash
+      source ~/.bashrc
+      clear
+    command: |
+      cd next-app
+      bun install
+      clear
+vscode:
+  extensions:
+    - dsznajder.es7-react-js-snippets
